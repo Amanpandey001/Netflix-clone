@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/Background.jpg);
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+.main nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+}
+
+nav span img {
+    width: 135px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    color: white;
+    position: relative;
+    z-index: 10;
+    margin: 0px 10px;
+}
+
+nav div button:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.11);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2px 13px 4px 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 130, 130);
+}
+
+nav div button:nth-child(2) {
+    background-color: red;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2px 13px 4px 13px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+
+}
+
+.hero {
+    height: calc(100%-66px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    gap: 17px;
+    padding: 30px;
+    margin: 52px 0 0 0;
+}
+
+.hero div {
+    display: inline;
+    margin-top: 10px;
+}
+.hero div input{
+    border: 1px solid rgb(133, 130, 130);
+    border-radius: 3px;
+    width: 299.65px;
+    height: 48.5px;
+    background-color: rgba(0, 0, 0, 0.281);
+
+}
+.hero div button{
+    height: 47.5px;
+    width: 170.02px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.hero div button:hover,nav div button:nth-child(2):hover{
+    background-color: rgba(255, 0, 0, 0.753);
+}
+.hero div button:active,nav div button:nth-child(2):active{
+    background-color: rgba(255, 0, 0, 0.568);
+}
+.hero p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.hero h3 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 39px;
+    text-align: center;
+}
+.sep{
+    height: 5px;
+    background-color: gray;
+}
+.sec{
+    height: 65vh;
+}
+.freq{
+    height: 100vh;
+}
+.sec05{
+    height: 50vh;
+}
