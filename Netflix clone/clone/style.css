@@ -139,242 +139,71 @@ nav div button:nth-child(2) {
     background-color: gray;
 }
 .sec{
-    height: 65vh;
+    max-width: 70vw;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: white;
-}
-.sec01{
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
 }
-
-.sec01 .text,.img{
-    height: 80%;
-    width: 35vw;
-    /* color: white; */
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.text{  
-    align-items: start;
-    justify-content: center;
-    text-align: start;
-}
-.img{
+.sec .img{
     position: relative;
 }
-.img img{
+.sec .img img{
     width: 500px;
-    height: 340px;
-    position: absolute;
-    z-index: 10;
-}
-.img video{
-    width: 370px;
-    height: 250px;
-    position: absolute;
-    top: 50px;
-    right: 80px;
-}
-.text h1{
-    font-weight: 900;
-    font-size: 39px;
-}
-.text p{
-    font-weight: 400;
-    font-size: 20px;
-}
-.sec02{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.sec02 .text,.img{
-    height: 80%;
-    width: 38vw;
-    /* color: white; */
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.sec02 img{
-    width: 480px;
-    height: 100%;
-}
-
-.sec02 .text h1{
-    font-weight: 900;
-    font-size: 39px;
-}
-.sec02 .text p{
-    font-weight: 400;
-    font-size: 20px;
-}
-.sec03{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.sec03 .text,.img{
-    height: 80%;
-    width: 35vw;
-    /* color: white; */
-    display: flex;
-    flex-direction: column;
-    
-
-}
-
-.sec03 .img{
     position: relative;
-}
-.sec03 .img img{
-    width: 500px;
-    height: 340px;
-    position: absolute;
     z-index: 10;
+}
+.sec .img video{
+    position: absolute;
+    width: 430px;
+    right: 5px;
+    top: 70px;
+}
+.sec .text h1{
+    font-size: 39px;
+    font-weight: 900;
+}
+.sec .text p{
+    font-size: 20px;
+    font-weight: 400;
 }
 .sec03 .img video{
-    width: 310px;
-    height: 250px;
-    position: absolute;
-    top: 10px;
-    right: 114px;
+    width: 330px;
+    top: 30px;
+    right: 90px;
+}
+.secfoot .buttons input{
+    width: 240px;
+}
+@media screen and (max-width: 1200px) {
+    nav{
+        max-width: 90vw;
+    }
+    .sec{
+        flex-wrap: wrap;
+    }
+    .img img{
+        width: 230px;
+    }
+    .img video{
+        width: 160px;
+    }
+    .sec03 .img video{
+        width: 330px;
+    }
+    .sec .text{
+        margin: 10px 0 20px 0;
+    }
+    /* .freq{
+        justify-content: start;
+        align-self: start;
+        align-items: start;
+    } */
 }
 
-.sec04{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.sec04 .text,.img{
-    height: 80%;
-    width: 38vw;
-    /* color: white; */
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.sec04 img{
-    width: 480px;
-    height: 105%;
-}   
-
-.sec04 .text h1{
-    font-weight: 900;
-    font-size: 39px;
-}
-.sec04 .text p{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.freq{
-    height: 120vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.freq .FAQ{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: 39px;
-    font-weight: 900;
-    margin: 50px 50px 10px 50px;
-}
-.freq .faqbtn .button{
-    background-color: rgb(78, 78, 78);
-    margin: 10px auto 1px auto;
-    width: 70vw;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 400;
-    display: flex;
-    /* justify-content: center; */
-    padding: 0 0 0 18px;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.4s;
-}
-.freq .faqbtn .button:hover{
-    background-color: rgb(100, 100, 100);
-}
-/* .faqbtn .button p{
-    margin: 0 0 0 10px;
-} */
-.faqbtn .button svg{
-    width:24px;
-    padding: 15px;
-}
-.secfoot h3{
-    margin: 60px 0 0 0;
-    font-size: 20px;
-    font-weight: 600;
-}
-.secfoot .buttons{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-}
-
-.secfoot .buttons input,button{
-    margin: 10px;
-}
-footer{
-    height: 50vh;
-    margin: auto auto auto 150px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: start;
-}
-footer p{
-    color: rgba(255, 255, 255, 0.7);
-    margin: 40px 0 0 0;
-}
-footer div p u{
-    cursor: pointer;
-}
-footer div{
-    width: auto;
-    text-align: start;
-    margin: 10px 0 0 0;
-}
-footer div .container{
-    margin: 20px 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: rgba(255, 255, 255, 0.7);
-    gap: 10px 100px;
-}
-footer div .container .btnlo{
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-footer div .container button{
-    color: white;
-    position: relative;
-    z-index: 10;
-    margin: 10px 0 10px 0;
-}
-footer span{
-    margin: 0 0 10px 0;
-}
-footer div .container a{
-    color:rgba(255, 255, 255, 0.7);
-    font-weight: 400;
-    font-size: 15px;
+@media screen and (max-width: 1200px) {
+    /*footer */
 }
