@@ -23,7 +23,9 @@ body {
     top: 0;
     height: 80vh;
     width: 100%;
-    background-color: black;
+    background: linear-gradient(black,black, rgba(0, 0, 0, 0.356),black,rgb(0, 0, 0)),
+                linear-gradient(90deg, black,transparent,rgba(0, 0, 0, 0.356),transparent,black);
+    /* background-color: black; */
     opacity: 0.70;
 }
 
