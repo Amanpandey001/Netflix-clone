@@ -3,3 +3,5 @@ I completed html css and basics of figma, so i made this clone as my first html 
 
 
 soo like.... i should've used linear gradient or smth, im sorry i didnt really explore css before making this, i will explore it again as i have finished my js today and will try to give life to this deadass website in 2 weeks or so....
+
+## Completed, izz just the homepage of netflix using html and css, not functional or anything, but its cool :) 
